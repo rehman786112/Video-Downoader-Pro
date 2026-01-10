@@ -1,12 +1,12 @@
 {
   "app_config": {
-    "version": "2.0.0",
+    "version": "1.4.0",
     "app_name": "Video Downloader Pro",
     "company": "Video Downloader Pro Inc.",
-    "copyright": "© 2024 Video Downloader Pro. All rights reserved.",
+    "copyright": "© 2026 Video Downloader Pro. All rights reserved.",
     "support_email": "support@videodownloader.fwh.is",
-    "website": "https://videodownloader.fwh.is",
-    "github": "https://github.com/rehman786112/Video-Downoader-Pro",
+    "website": "https://videodownloader.fwh.is/",
+    "github": "https://github.com/rehman786112/Video-Downoader-Pro/",
     "max_trials": 5,
     "max_concurrent_downloads": 3,
     "default_download_dir": "Video Downloader",
@@ -16,7 +16,7 @@
   },
   
   "update": {
-    "latest_version": "2.0.0",
+    "latest_version": "1.4.0",
     "min_required_version": "1.4.0",
     "download_url": "https://github.com/rehman786112/Video-Downoader-Pro/releases/latest/download/VideoDownloaderPro.Setup.exe",
     "changelog": "🎉 Version 2.0.0 - Major Release\n\n✨ NEW FEATURES:\n• Completely redesigned UI with dark theme\n• Browser extension integration (Chrome, Firefox, Edge)\n• Smart download queue with pause/resume\n• Batch download support for playlists\n• 4K/8K video support\n• Audio extraction to MP3, M4A, WAV\n• Built-in video converter\n• Download scheduler\n• Download history with search\n\n🔧 IMPROVEMENTS:\n• 300% faster downloads with aria2 integration\n• Smart quality detection\n• Automatic format selection\n• Better error handling and recovery\n• Reduced memory usage\n• Improved network stability\n\n🐛 BUG FIXES:\n• Fixed download window closing issues\n• Fixed file cleanup on cancel\n• Fixed license validation errors\n• Fixed extension connection problems\n• Fixed quality selection for free users\n• Fixed recent downloads tracking\n\n⚡ PERFORMANCE:\n• 40% faster startup time\n• 60% less memory usage\n• Better CPU utilization\n• Optimized network requests\n\n🔒 SECURITY:\n• Enhanced license validation\n• Secure download protocols\n• No data collection\n• Local storage only",
@@ -609,7 +609,7 @@
       "• GitHub: https://github.com/rehman786112/Video-Downoader-Pro",
       "",
       "**Current Version:**",
-      "• v2.0.0",
+      "• v1.4.0",
       "",
       "**Update Channels:**",
       "• Stable: Auto-updates from GitHub",
@@ -829,8 +829,8 @@
   
   "changelog_history": [
     {
-      "version": "2.0.0",
-      "date": "2024-03-15",
+      "version": "1.4.0",
+      "date": "2026-01-01",
       "changes": [
         "Complete UI redesign with dark theme",
         "Browser extension integration",
@@ -840,8 +840,8 @@
       ]
     },
     {
-      "version": "1.5.0",
-      "date": "2024-02-28",
+      "version": "1.4.0",
+      "date": "2026-06-26",
       "changes": [
         "Added batch download feature",
         "Improved error handling",
@@ -851,7 +851,7 @@
     },
     {
       "version": "1.4.0",
-      "date": "2024-02-15",
+      "date": "2026-01-01",
       "changes": [
         "Initial public release",
         "Basic download functionality",
@@ -879,7 +879,7 @@
   
   "promotions": {
     "current": {
-      "name": "Spring Sale 2024",
+      "name": "Spring Sale 2026",
       "discount": "30% OFF",
       "code": "SPRING2024",
       "valid_until": "2024-04-15",
@@ -888,7 +888,7 @@
     "upcoming": {
       "name": "Summer Special",
       "discount": "40% OFF",
-      "starts": "2024-06-01",
+      "starts": "2026-05-03",
       "description": "Summer sale coming soon!"
     }
   },
@@ -902,12 +902,12 @@
     "free_users": 10172,
     "average_rating": 4.8,
     "support_tickets": 124,
-    "last_updated": "2024-03-15T10:30:00Z"
+    "last_updated": "2026-03-15T10:30:00Z"
   },
   
   "metadata": {
-    "generated": "2024-03-15T12:00:00Z",
-    "version": "2.0.0",
+    "generated": "2026-03-15T12:00:00Z",
+    "version": "1.4.0",
     "format": "json",
     "encoding": "utf-8",
     "checksum": "a1b2c3d4e5f67890123456789abcdef",
