@@ -1,3 +1,916 @@
 {
-  "Data"
+  "app_config": {
+    "version": "2.0.0",
+    "app_name": "Video Downloader Pro",
+    "company": "Video Downloader Pro Inc.",
+    "copyright": "© 2024 Video Downloader Pro. All rights reserved.",
+    "support_email": "support@videodownloader.fwh.is",
+    "website": "https://videodownloader.fwh.is",
+    "github": "https://github.com/rehman786112/Video-Downoader-Pro",
+    "max_trials": 5,
+    "max_concurrent_downloads": 3,
+    "default_download_dir": "Video Downloader",
+    "extension_port": 8799,
+    "update_check_interval": 86400,
+    "session_timeout": 3600
+  },
+  
+  "update": {
+    "latest_version": "2.0.0",
+    "min_required_version": "1.4.0",
+    "download_url": "https://github.com/rehman786112/Video-Downoader-Pro/releases/latest/download/VideoDownloaderPro.Setup.exe",
+    "changelog": "🎉 Version 2.0.0 - Major Release\n\n✨ NEW FEATURES:\n• Completely redesigned UI with dark theme\n• Browser extension integration (Chrome, Firefox, Edge)\n• Smart download queue with pause/resume\n• Batch download support for playlists\n• 4K/8K video support\n• Audio extraction to MP3, M4A, WAV\n• Built-in video converter\n• Download scheduler\n• Download history with search\n\n🔧 IMPROVEMENTS:\n• 300% faster downloads with aria2 integration\n• Smart quality detection\n• Automatic format selection\n• Better error handling and recovery\n• Reduced memory usage\n• Improved network stability\n\n🐛 BUG FIXES:\n• Fixed download window closing issues\n• Fixed file cleanup on cancel\n• Fixed license validation errors\n• Fixed extension connection problems\n• Fixed quality selection for free users\n• Fixed recent downloads tracking\n\n⚡ PERFORMANCE:\n• 40% faster startup time\n• 60% less memory usage\n• Better CPU utilization\n• Optimized network requests\n\n🔒 SECURITY:\n• Enhanced license validation\n• Secure download protocols\n• No data collection\n• Local storage only",
+    "release_date": "2024-03-15",
+    "release_notes": "This major release includes complete UI redesign, browser extensions, and performance improvements.",
+    "update_available": true,
+    "force_update": false,
+    "beta_version": "2.1.0-beta",
+    "beta_changelog": "Beta version with experimental features",
+    "update_channels": {
+      "stable": "https://github.com/rehman786112/Video-Downoader-Pro/releases/latest",
+      "beta": "https://github.com/rehman786112/Video-Downoader-Pro/releases",
+      "nightly": "https://github.com/rehman786112/Video-Downoader-Pro/actions"
+    }
+  },
+  
+  "license_keys": {
+    "VD_PRO_DEV2024ALI": {
+      "type": "pro",
+      "expiry": null,
+      "created": "2024-01-15",
+      "max_devices": 3,
+      "features": ["unlimited", "4k", "batch", "priority"],
+      "customer": "Developer Ali",
+      "email": "developer@example.com"
+    },
+    "VD_PRO_MASTERKEY2025": {
+      "type": "master",
+      "expiry": null,
+      "created": "2024-01-20",
+      "max_devices": 999,
+      "features": ["unlimited", "4k", "8k", "batch", "priority", "enterprise"],
+      "customer": "Master User",
+      "email": "master@example.com"
+    },
+    "UNLOCKALLFORME2025": {
+      "type": "ultimate",
+      "expiry": "2025-12-31",
+      "created": "2024-02-01",
+      "max_devices": 5,
+      "features": ["unlimited", "4k", "8k", "batch", "priority", "converter"],
+      "customer": "Premium User",
+      "email": "premium@example.com"
+    },
+    "DEVELOPERISREHMAN2025": {
+      "type": "developer",
+      "expiry": null,
+      "created": "2024-01-10",
+      "max_devices": 10,
+      "features": ["unlimited", "4k", "8k", "batch", "priority", "developer"],
+      "customer": "Rehman Ali",
+      "email": "rehman@example.com"
+    },
+    "VD_PRO_FREE_ALI2024": {
+      "type": "pro",
+      "expiry": null,
+      "created": "2024-01-25",
+      "max_devices": 1,
+      "features": ["unlimited", "4k", "batch"],
+      "customer": "Free User",
+      "email": "free@example.com"
+    },
+    "VD_PRO_FREE_FOR_DEVELOPER_2025": {
+      "type": "developer",
+      "expiry": null,
+      "created": "2024-02-05",
+      "max_devices": 3,
+      "features": ["unlimited", "4k", "8k", "batch", "developer"],
+      "customer": "Dev Tester",
+      "email": "dev@example.com"
+    },
+    "VD_PRO_ABC123XYZ": {
+      "type": "pro",
+      "expiry": "2024-12-31",
+      "created": "2024-01-30",
+      "max_devices": 1,
+      "features": ["unlimited", "4k"],
+      "customer": "Test User 1",
+      "email": "test1@example.com"
+    },
+    "VD_PRO_DEF456UVW": {
+      "type": "pro",
+      "expiry": "2024-12-31",
+      "created": "2024-02-10",
+      "max_devices": 1,
+      "features": ["unlimited", "4k"],
+      "customer": "Test User 2",
+      "email": "test2@example.com"
+    },
+    "VD_ENT_GHI789RST": {
+      "type": "enterprise",
+      "expiry": null,
+      "created": "2024-02-15",
+      "max_devices": 50,
+      "features": ["unlimited", "4k", "8k", "batch", "enterprise", "white_label"],
+      "customer": "Enterprise Corp",
+      "email": "enterprise@example.com"
+    },
+    "VD_PRO_NEWUSER2024": {
+      "type": "basic",
+      "expiry": "2024-12-31",
+      "created": "2024-03-01",
+      "max_devices": 1,
+      "features": ["unlimited", "1080p"],
+      "customer": "New User",
+      "email": "new@example.com"
+    },
+    "VD_PRO_PREMIUM2024": {
+      "type": "premium",
+      "expiry": "2024-12-31",
+      "created": "2024-02-20",
+      "max_devices": 3,
+      "features": ["unlimited", "4k", "batch", "priority"],
+      "customer": "Premium Customer",
+      "email": "premium@example.com"
+    },
+    "VD_PRO_ULTIMATE2025": {
+      "type": "ultimate",
+      "expiry": "2025-12-31",
+      "created": "2024-03-05",
+      "max_devices": 5,
+      "features": ["unlimited", "4k", "8k", "batch", "priority", "converter"],
+      "customer": "Ultimate User",
+      "email": "ultimate@example.com"
+    },
+    "VD_PRO_BASIC2024": {
+      "type": "basic",
+      "expiry": "2024-12-31",
+      "created": "2024-02-25",
+      "max_devices": 1,
+      "features": ["unlimited", "720p"],
+      "customer": "Basic User",
+      "email": "basic@example.com"
+    },
+    "VD_PRO_STANDARD2024": {
+      "type": "standard",
+      "expiry": "2024-12-31",
+      "created": "2024-03-10",
+      "max_devices": 2,
+      "features": ["unlimited", "1080p", "batch"],
+      "customer": "Standard User",
+      "email": "standard@example.com"
+    },
+    "VD_PRO_ADVANCED2025": {
+      "type": "advanced",
+      "expiry": "2025-06-30",
+      "created": "2024-03-12",
+      "max_devices": 3,
+      "features": ["unlimited", "4k", "batch", "priority"],
+      "customer": "Advanced User",
+      "email": "advanced@example.com"
+    },
+    "VD_PRO_EXPERT2025": {
+      "type": "expert",
+      "expiry": "2025-12-31",
+      "created": "2024-03-14",
+      "max_devices": 4,
+      "features": ["unlimited", "4k", "8k", "batch", "priority"],
+      "customer": "Expert User",
+      "email": "expert@example.com"
+    },
+    "VD_PRO_GOLD2024": {
+      "type": "gold",
+      "expiry": "2024-12-31",
+      "created": "2024-03-08",
+      "max_devices": 3,
+      "features": ["unlimited", "4k", "batch", "priority", "gold_support"],
+      "customer": "Gold Member",
+      "email": "gold@example.com"
+    },
+    "VD_PRO_PLATINUM2025": {
+      "type": "platinum",
+      "expiry": null,
+      "created": "2024-03-13",
+      "max_devices": 5,
+      "features": ["unlimited", "4k", "8k", "batch", "priority", "platinum_support"],
+      "customer": "Platinum Member",
+      "email": "platinum@example.com"
+    },
+    "VD_PRO_DIAMOND2025": {
+      "type": "diamond",
+      "expiry": null,
+      "created": "2024-03-15",
+      "max_devices": 10,
+      "features": ["unlimited", "4k", "8k", "batch", "priority", "diamond_support", "custom"],
+      "customer": "Diamond Member",
+      "email": "diamond@example.com"
+    },
+    "VD_PRO_VIP2024": {
+      "type": "vip",
+      "expiry": "2024-12-31",
+      "created": "2024-03-11",
+      "max_devices": 3,
+      "features": ["unlimited", "4k", "batch", "vip_support"],
+      "customer": "VIP User",
+      "email": "vip@example.com"
+    },
+    "TEST_KEY_12345": {
+      "type": "trial",
+      "expiry": "2024-04-01",
+      "created": "2024-03-15",
+      "max_devices": 1,
+      "features": ["limited", "720p"],
+      "customer": "Trial User",
+      "email": "trial@example.com"
+    }
+  },
+  
+  "master_keys": [
+    "VD_PRO_DEV2024ALI",
+    "VD_PRO_MASTERKEY2025",
+    "UNLOCKALLFORME2025",
+    "DEVELOPERISREHMAN2025",
+    "VD_PRO_FREE_ALI2024",
+    "VD_PRO_FREE_FOR_DEVELOPER_2025"
+  ],
+  
+  "features": {
+    "free_tier": {
+      "max_downloads": 5,
+      "qualities": ["720p", "480p", "360p", "240p", "144p"],
+      "formats": ["mp4", "mp3"],
+      "batch_download": false,
+      "priority_support": false,
+      "updates": true
+    },
+    "pro_tier": {
+      "max_downloads": "unlimited",
+      "qualities": ["Best Quality", "8K", "4K", "2K", "1080p", "720p", "480p", "360p", "240p", "144p"],
+      "formats": ["mp4", "webm", "mkv", "mp3", "m4a", "wav", "aac", "opus"],
+      "batch_download": true,
+      "priority_support": true,
+      "updates": true,
+      "browser_extensions": true,
+      "converter": true,
+      "scheduler": true
+    }
+  },
+  
+  "video_qualities": [
+    {
+      "name": "Best Quality",
+      "value": "best",
+      "description": "Auto-select best available quality",
+      "resolution": "Auto",
+      "requires_pro": true
+    },
+    {
+      "name": "8K",
+      "value": "4320p",
+      "description": "7680x4320 pixels - Ultra HD",
+      "resolution": "7680x4320",
+      "requires_pro": true
+    },
+    {
+      "name": "4K",
+      "value": "2160p",
+      "description": "3840x2160 pixels - Ultra HD",
+      "resolution": "3840x2160",
+      "requires_pro": true
+    },
+    {
+      "name": "2K",
+      "value": "1440p",
+      "description": "2560x1440 pixels - Quad HD",
+      "resolution": "2560x1440",
+      "requires_pro": true
+    },
+    {
+      "name": "1080p",
+      "value": "1080p",
+      "description": "1920x1080 pixels - Full HD",
+      "resolution": "1920x1080",
+      "requires_pro": true
+    },
+    {
+      "name": "720p",
+      "value": "720p",
+      "description": "1280x720 pixels - HD Ready",
+      "resolution": "1280x720",
+      "requires_pro": false
+    },
+    {
+      "name": "480p",
+      "value": "480p",
+      "description": "854x480 pixels - Standard Definition",
+      "resolution": "854x480",
+      "requires_pro": false
+    },
+    {
+      "name": "360p",
+      "value": "360p",
+      "description": "640x360 pixels - Low Quality",
+      "resolution": "640x360",
+      "requires_pro": false
+    },
+    {
+      "name": "240p",
+      "value": "240p",
+      "description": "426x240 pixels - Very Low Quality",
+      "resolution": "426x240",
+      "requires_pro": false
+    },
+    {
+      "name": "144p",
+      "value": "144p",
+      "description": "256x144 pixels - Lowest Quality",
+      "resolution": "256x144",
+      "requires_pro": false
+    }
+  ],
+  
+  "audio_formats": [
+    {
+      "name": "MP3",
+      "value": "mp3",
+      "extension": ".mp3",
+      "bitrate": "320kbps",
+      "description": "Most compatible audio format"
+    },
+    {
+      "name": "M4A",
+      "value": "m4a",
+      "extension": ".m4a",
+      "bitrate": "256kbps",
+      "description": "Apple audio format"
+    },
+    {
+      "name": "WAV",
+      "value": "wav",
+      "extension": ".wav",
+      "bitrate": "1411kbps",
+      "description": "Lossless audio quality"
+    },
+    {
+      "name": "AAC",
+      "value": "aac",
+      "extension": ".aac",
+      "bitrate": "256kbps",
+      "description": "Advanced Audio Coding"
+    },
+    {
+      "name": "Opus",
+      "value": "opus",
+      "extension": ".opus",
+      "bitrate": "128kbps",
+      "description": "High efficiency audio"
+    },
+    {
+      "name": "FLAC",
+      "value": "flac",
+      "extension": ".flac",
+      "bitrate": "Variable",
+      "description": "Free Lossless Audio Codec"
+    }
+  ],
+  
+  "supported_platforms": [
+    {
+      "name": "YouTube",
+      "url_patterns": ["youtube.com", "youtu.be"],
+      "supports": ["video", "audio", "playlist", "channel"],
+      "max_quality": "8K",
+      "requires_login": false
+    },
+    {
+      "name": "TikTok",
+      "url_patterns": ["tiktok.com"],
+      "supports": ["video", "audio"],
+      "max_quality": "1080p",
+      "requires_login": false
+    },
+    {
+      "name": "Instagram",
+      "url_patterns": ["instagram.com"],
+      "supports": ["video", "image"],
+      "max_quality": "1080p",
+      "requires_login": true
+    },
+    {
+      "name": "Facebook",
+      "url_patterns": ["facebook.com", "fb.watch"],
+      "supports": ["video"],
+      "max_quality": "1080p",
+      "requires_login": true
+    },
+    {
+      "name": "Twitter",
+      "url_patterns": ["twitter.com", "x.com"],
+      "supports": ["video"],
+      "max_quality": "720p",
+      "requires_login": false
+    },
+    {
+      "name": "Vimeo",
+      "url_patterns": ["vimeo.com"],
+      "supports": ["video"],
+      "max_quality": "4K",
+      "requires_login": false
+    },
+    {
+      "name": "Dailymotion",
+      "url_patterns": ["dailymotion.com"],
+      "supports": ["video"],
+      "max_quality": "1080p",
+      "requires_login": false
+    },
+    {
+      "name": "Twitch",
+      "url_patterns": ["twitch.tv"],
+      "supports": ["video", "clip"],
+      "max_quality": "1080p",
+      "requires_login": true
+    },
+    {
+      "name": "SoundCloud",
+      "url_patterns": ["soundcloud.com"],
+      "supports": ["audio"],
+      "max_quality": "320kbps",
+      "requires_login": false
+    },
+    {
+      "name": "Bandcamp",
+      "url_patterns": ["bandcamp.com"],
+      "supports": ["audio"],
+      "max_quality": "Lossless",
+      "requires_login": false
+    },
+    {
+      "name": "Pinterest",
+      "url_patterns": ["pinterest.com"],
+      "supports": ["video", "image"],
+      "max_quality": "720p",
+      "requires_login": false
+    },
+    {
+      "name": "Reddit",
+      "url_patterns": ["reddit.com", "redd.it"],
+      "supports": ["video"],
+      "max_quality": "1080p",
+      "requires_login": false
+    },
+    {
+      "name": "LinkedIn",
+      "url_patterns": ["linkedin.com"],
+      "supports": ["video"],
+      "max_quality": "1080p",
+      "requires_login": true
+    },
+    {
+      "name": "Tumblr",
+      "url_patterns": ["tumblr.com"],
+      "supports": ["video", "image"],
+      "max_quality": "1080p",
+      "requires_login": false
+    },
+    {
+      "name": "Bilibili",
+      "url_patterns": ["bilibili.com"],
+      "supports": ["video"],
+      "max_quality": "4K",
+      "requires_login": false
+    },
+    {
+      "name": "Youku",
+      "url_patterns": ["youku.com"],
+      "supports": ["video"],
+      "max_quality": "4K",
+      "requires_login": false
+    },
+    {
+      "name": "Douyin",
+      "url_patterns": ["douyin.com"],
+      "supports": ["video"],
+      "max_quality": "1080p",
+      "requires_login": true
+    },
+    {
+      "name": "VK",
+      "url_patterns": ["vk.com"],
+      "supports": ["video"],
+      "max_quality": "1080p",
+      "requires_login": true
+    },
+    {
+      "name": "Rumble",
+      "url_patterns": ["rumble.com"],
+      "supports": ["video"],
+      "max_quality": "1080p",
+      "requires_login": false
+    },
+    {
+      "name": "Odysee",
+      "url_patterns": ["odysee.com"],
+      "supports": ["video"],
+      "max_quality": "4K",
+      "requires_login": false
+    }
+  ],
+  
+  "help_content": {
+    "getting_started": [
+      "🎬 **Welcome to Video Downloader Pro!**",
+      "",
+      "**Quick Start Guide:**",
+      "1. **Paste URL**: Copy any video URL and paste it in the input box",
+      "2. **Select Format**: Choose between Video or Audio format",
+      "3. **Choose Quality**: Select your preferred video quality",
+      "4. **Set Folder**: Choose where to save downloads",
+      "5. **Click Download**: Start your download instantly",
+      "",
+      "**Pro Tip**: Use browser extensions for one-click downloads!"
+    ],
+    
+    "extension_setup": [
+      "🔧 **Browser Extension Installation:**",
+      "",
+      "**1. Download Extension:**",
+      "   • Visit: https://videodownloader.fwh.is/#extension",
+      "   • Download the extension for your browser",
+      "",
+      "**2. Install Extension:**",
+      "   • **Chrome**: Go to chrome://extensions/ → Enable Developer Mode → Load unpacked",
+      "   • **Firefox**: Go to about:debugging → This Firefox → Load Temporary Add-on",
+      "   • **Edge**: Go to edge://extensions/ → Enable Developer Mode → Load unpacked",
+      "",
+      "**3. Connect Extension:**",
+      "   • Make sure Video Downloader Pro is running",
+      "   • Extension will automatically connect to port 8799",
+      "   • Status: Green icon = Connected, Red icon = Disconnected",
+      "",
+      "**4. Using the Extension:**",
+      "   • Visit YouTube, TikTok, Instagram, etc.",
+      "   • Click the extension icon near video",
+      "   • Select quality and click Download",
+      "   • Popup will appear in Video Downloader Pro",
+      "",
+      "⚠️ **Troubleshooting:**",
+      "• **If extension doesn't connect:**",
+      "  - Make sure app is running",
+      "  - Check firewall allows port 8799",
+      "  - Restart app and browser",
+      "• **Extension folder**: Look for 'VideoDownloaderPro_Extension' in downloads"
+    ],
+    
+    "app_features": [
+      "🎯 **Main Features:**",
+      "• Download from 1000+ sites (YouTube, TikTok, Instagram, Facebook, Twitter, etc.)",
+      "• Multiple quality options (144p to 8K)",
+      "• Audio extraction (MP3, M4A, WAV, FLAC, etc.)",
+      "• Batch download support",
+      "• Download queue management",
+      "• Recent downloads history",
+      "",
+      "⚡ **Advanced Features:**",
+      "• Use aria2c for faster downloads (auto-installed)",
+      "• FFmpeg for video merging (auto-installed)",
+      "• Automatic updates",
+      "• License system for unlimited access",
+      "• Browser extension support",
+      "• Download scheduler",
+      "• Built-in video converter",
+      "",
+      "📊 **Settings:**",
+      "• Custom download folder (saved automatically)",
+      "• Concurrent downloads (up to 3 simultaneously)",
+      "• Auto-retry failed downloads",
+      "• Pause/resume downloads",
+      "• Download history with search",
+      "",
+      "💡 **Tips:**",
+      "• Save your download path once, it will be remembered",
+      "• Use 'Install Tools' button if downloads fail",
+      "• Check for updates regularly",
+      "• Use batch download for playlists",
+      "• Enable aria2c for faster downloads"
+    ],
+    
+    "updates_info": [
+      "🔄 **Update System:**",
+      "",
+      "**Auto Update:**",
+      "• App checks for updates on startup",
+      "• Click 'Check Update' button for manual check",
+      "• Auto-download installer when update available",
+      "• Installer auto-runs after download",
+      "",
+      "**Manual Update:**",
+      "• Website: https://videodownloader.fwh.is/#download",
+      "• GitHub: https://github.com/rehman786112/Video-Downoader-Pro",
+      "",
+      "**Current Version:**",
+      "• v2.0.0",
+      "",
+      "**Update Channels:**",
+      "• Stable: Auto-updates from GitHub",
+      "• Beta: Contact support for access",
+      "• Nightly: Developer builds",
+      "",
+      "⚠️ **Important:**",
+      "• Always backup your license key",
+      "• Updates preserve your settings and downloads",
+      "• Check changelog before updating"
+    ],
+    
+    "troubleshooting": [
+      "🔧 **Common Issues & Solutions:**",
+      "",
+      "**1. Download Failing:**",
+      "   • Check internet connection",
+      "   • Try different quality",
+      "   • Use VPN for restricted content",
+      "   • Update yt-dlp via 'Install Tools'",
+      "",
+      "**2. Slow Downloads:**",
+      "   • Enable aria2c in settings",
+      "   • Check internet speed",
+      "   • Try lower quality",
+      "   • Close other bandwidth-heavy apps",
+      "",
+      "**3. Extension Not Working:**",
+      "   • Make sure app is running",
+      "   • Check port 8799 is not blocked",
+      "   • Restart browser and app",
+      "   • Reinstall extension",
+      "",
+      "**4. License Issues:**",
+      "   • Check internet connection",
+      "   • Verify license key format",
+      "   • Contact support if expired",
+      "   • Try re-activating license",
+      "",
+      "**5. Audio Extraction Failing:**",
+      "   • Install FFmpeg via 'Install Tools'",
+      "   • Try different audio format",
+      "   • Check source video has audio",
+      "   • Update to latest version"
+    ],
+    
+    "faqs": [
+      {
+        "id": "faq1",
+        "category": "general",
+        "question": "❓ Is Video Downloader Pro safe to use?",
+        "answer": "✅ Yes! Our software is 100% safe, virus-free, and respects your privacy. We never track your downloads or collect personal data. All downloads are processed locally on your computer."
+      },
+      {
+        "id": "faq2",
+        "category": "general",
+        "question": "❓ Do I need to pay for updates?",
+        "answer": "✅ No! All Pro and Enterprise licenses include lifetime free updates. You'll get all future versions at no additional cost. Free users also get security updates."
+      },
+      {
+        "id": "faq3",
+        "category": "extension",
+        "question": "❓ How do browser extensions work?",
+        "answer": "✅ Our extensions integrate with Video Downloader Pro. When you click the extension icon on any video page, it automatically sends the video to the desktop app for download. The extension connects via local port 8799."
+      },
+      {
+        "id": "faq4",
+        "category": "technical",
+        "question": "❓ Why is my download failing?",
+        "answer": "🔧 Check internet connection, video availability, or try VPN for restricted content. Also make sure you have the latest version installed via 'Check Update' button."
+      },
+      {
+        "id": "faq5",
+        "category": "technical",
+        "question": "❓ How to download 4K/8K videos?",
+        "answer": "⭐ Upgrade to Pro version and select \"4K\" or \"8K\" quality option. Free users are limited to 720p maximum quality."
+      },
+      {
+        "id": "faq6",
+        "category": "extension",
+        "question": "❓ Extension not connecting?",
+        "answer": "🔧 Make sure app is running, port 8799 is not blocked by firewall, and restart both app and browser. Check extension icon color (green = connected)."
+      },
+      {
+        "id": "faq7",
+        "category": "general",
+        "question": "❓ How to change download folder?",
+        "answer": "📁 Click \"Browse\" button, select folder - it will be saved automatically for future downloads. You can also drag and drop folders."
+      },
+      {
+        "id": "faq8",
+        "category": "technical",
+        "question": "❓ Why is aria2c not working?",
+        "answer": "🔧 Click \"Install Tools\" button to install aria2c automatically. If already installed, try disabling and re-enabling it in settings."
+      },
+      {
+        "id": "faq9",
+        "category": "license",
+        "question": "❓ How to get license key?",
+        "answer": "💳 Visit https://videodownloader.fwh.is/#purchase or click \"Purchase License\" button in the app. You can also contact sales@videodownloader.fwh.is"
+      },
+      {
+        "id": "faq10",
+        "category": "technical",
+        "question": "❓ Download stuck at 0%?",
+        "answer": "🔧 Try different quality, check VPN, or use \"Retry\" button in download window. Also check if the video is available in your region."
+      },
+      {
+        "id": "faq11",
+        "category": "features",
+        "question": "❓ How to batch download?",
+        "answer": "📦 Add multiple URLs one by one - they will queue automatically. For playlists, paste the playlist URL and enable batch mode."
+      },
+      {
+        "id": "faq12",
+        "category": "technical",
+        "question": "❓ Audio extraction not working?",
+        "answer": "🔧 Make sure FFmpeg is installed via \"Install Tools\" button. Also try converting to a different audio format like MP3 instead of M4A."
+      },
+      {
+        "id": "faq13",
+        "category": "general",
+        "question": "❓ Where are my downloaded files?",
+        "answer": "📁 Check \"Recent Downloads\" section or open folder from completion dialog. Files are saved to your selected download folder."
+      },
+      {
+        "id": "faq14",
+        "category": "license",
+        "question": "❓ How many free downloads do I get?",
+        "answer": "🎯 Free users get 5 trial downloads. After that, upgrade to Pro for unlimited access. Trial resets don't work - purchase a license for permanent access."
+      },
+      {
+        "id": "faq15",
+        "category": "legal",
+        "question": "❓ Can I download from Netflix/Prime Video?",
+        "answer": "🚫 No, these platforms have DRM protection. We support 1000+ other sites but cannot bypass DRM due to legal restrictions."
+      },
+      {
+        "id": "faq16",
+        "category": "privacy",
+        "question": "❓ Is my data safe?",
+        "answer": "🔒 Yes, we don't collect or store any personal data. All downloads are local. We don't have servers storing your download history."
+      },
+      {
+        "id": "faq17",
+        "category": "support",
+        "question": "❓ How to contact support?",
+        "answer": "📧 Email: support@videodownloader.fwh.is or visit our website contact page. Include your license key and error details for faster support."
+      },
+      {
+        "id": "faq18",
+        "category": "license",
+        "question": "❓ Can I use on multiple computers?",
+        "answer": "💻 Pro license allows use on up to 3 devices simultaneously. Enterprise license allows 5+ devices. Contact sales for multi-device pricing."
+      },
+      {
+        "id": "faq19",
+        "category": "technical",
+        "question": "❓ App crashes on startup?",
+        "answer": "🔧 Try reinstalling the app, check system requirements, or run as administrator. Also make sure .NET Framework is updated."
+      },
+      {
+        "id": "faq20",
+        "category": "features",
+        "question": "❓ Can I schedule downloads?",
+        "answer": "⏰ Yes! Pro version includes download scheduler. Set time for downloads to start automatically."
+      }
+    ]
+  },
+  
+  "contact_info": {
+    "support": {
+      "email": "support@videodownloader.fwh.is",
+      "response_time": "24-48 hours",
+      "hours": "24/7",
+      "priority_support": "Available for Pro users"
+    },
+    "sales": {
+      "email": "sales@videodownloader.fwh.is",
+      "website": "https://videodownloader.fwh.is/#purchase",
+      "pricing_page": "https://videodownloader.fwh.is/#pricing"
+    },
+    "technical": {
+      "email": "tech@videodownloader.fwh.is",
+      "documentation": "https://videodownloader.fwh.is/docs",
+      "api_docs": "https://api.videodownloader.fwh.is"
+    },
+    "social": {
+      "twitter": "https://twitter.com/videodownloaderpro",
+      "github": "https://github.com/rehman786112/Video-Downoader-Pro",
+      "discord": "https://discord.gg/videodownloader",
+      "telegram": "https://t.me/videodownloaderpro"
+    }
+  },
+  
+  "system_requirements": {
+    "windows": {
+      "os": "Windows 10/11 (64-bit)",
+      "ram": "4GB minimum, 8GB recommended",
+      "storage": "500MB free space",
+      "processor": "Intel i3 or equivalent",
+      "net_framework": ".NET 4.8 or later"
+    },
+    "macos": {
+      "os": "macOS 11.0+",
+      "ram": "8GB minimum",
+      "storage": "1GB free space",
+      "processor": "Intel or Apple Silicon"
+    },
+    "linux": {
+      "os": "Ubuntu 20.04+, Fedora 34+, etc.",
+      "ram": "4GB minimum",
+      "storage": "500MB free space",
+      "dependencies": "Python 3.8+, FFmpeg"
+    }
+  },
+  
+  "changelog_history": [
+    {
+      "version": "2.0.0",
+      "date": "2024-03-15",
+      "changes": [
+        "Complete UI redesign with dark theme",
+        "Browser extension integration",
+        "8K video support added",
+        "Download scheduler implemented",
+        "Performance improvements"
+      ]
+    },
+    {
+      "version": "1.5.0",
+      "date": "2024-02-28",
+      "changes": [
+        "Added batch download feature",
+        "Improved error handling",
+        "Better license validation",
+        "Fixed memory leaks"
+      ]
+    },
+    {
+      "version": "1.4.0",
+      "date": "2024-02-15",
+      "changes": [
+        "Initial public release",
+        "Basic download functionality",
+        "License system",
+        "Simple UI"
+      ]
+    }
+  ],
+  
+  "privacy_policy": {
+    "data_collection": "We do not collect any personal data. All downloads are processed locally.",
+    "analytics": "Optional anonymous usage statistics to improve the app.",
+    "cookies": "No cookies used in the desktop application.",
+    "third_party": "No data shared with third parties.",
+    "compliance": "GDPR compliant, CCPA ready."
+  },
+  
+  "terms_of_service": {
+    "license": "One-time purchase grants lifetime license for personal use.",
+    "refund": "30-day money back guarantee.",
+    "updates": "Lifetime free updates included.",
+    "support": "Free support for all users, priority for Pro.",
+    "usage": "For personal use only. Commercial licenses available."
+  },
+  
+  "promotions": {
+    "current": {
+      "name": "Spring Sale 2024",
+      "discount": "30% OFF",
+      "code": "SPRING2024",
+      "valid_until": "2024-04-15",
+      "description": "Get 30% off all Pro licenses this spring!"
+    },
+    "upcoming": {
+      "name": "Summer Special",
+      "discount": "40% OFF",
+      "starts": "2024-06-01",
+      "description": "Summer sale coming soon!"
+    }
+  },
+  
+  "statistics": {
+    "total_users": 15420,
+    "active_users": 8925,
+    "total_downloads": 1258475,
+    "today_downloads": 1547,
+    "pro_users": 5248,
+    "free_users": 10172,
+    "average_rating": 4.8,
+    "support_tickets": 124,
+    "last_updated": "2024-03-15T10:30:00Z"
+  },
+  
+  "metadata": {
+    "generated": "2024-03-15T12:00:00Z",
+    "version": "2.0.0",
+    "format": "json",
+    "encoding": "utf-8",
+    "checksum": "a1b2c3d4e5f67890123456789abcdef",
+    "signature": "video-downloader-pro-2024"
+  }
 }
