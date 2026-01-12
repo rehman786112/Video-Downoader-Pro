@@ -5,7 +5,7 @@
   },
   
   "update": {
-    "latest_version": "2.0.0",
+    "latest_version": "2.1.0",
     "download_url": "https://github.com/rehman786112/Video-Downoader-Pro/releases/latest",
     "changelog": "Version 2.0.0 - Major Release\n• Complete UI redesign with dark theme\n• Browser extension integration\n• 8K video support\n• Download scheduler\n• Performance improvements",
     "update_available": false
