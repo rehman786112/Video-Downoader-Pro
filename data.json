@@ -7,7 +7,7 @@
   "update": {
     "latest_version": "2.1.0",
     "download_url": "https://github.com/rehman786112/Video-Downoader-Pro/releases/download/V2.0.0/VideoDownloaderPRO_Setup.exe",
-    "changelog": "Version 2.0.0 - Major Release\n• Complete UI redesign with dark theme\n• Browser extension integration\n• 8K video support\n• Download scheduler\n• Performance improvements\n Fixed Background Services to download video without runing app",
+    "changelog": "Version 2.0.0 - Major Release\n• Complete UI redesign with dark theme\n• Browser extension integration\n• 8K video support\n• Download scheduler\n• Performance improvements\n Fixed Background Services to download video without running app",
     "update_available": false
   },
   
@@ -33,218 +33,197 @@
     "VD_PRO_FREE_FOR_DEVELOPER_2025"
   ],
   
+  "extensions": {
+    "chrome_extension_url": "https://github.com/rehman786112/Video-Downoader-Pro/raw/main/extensions/chrome.crx",
+    "firefox_extension_url": "https://github.com/rehman786112/Video-Downoader-Pro/raw/main/extensions/firefox.xpi",
+    "edge_extension_url": "https://github.com/rehman786112/Video-Downoader-Pro/raw/main/extensions/edge.crx",
+    "opera_extension_url": "https://github.com/rehman786112/Video-Downoader-Pro/raw/main/extensions/chrome.crx",
+    "install_instructions": {
+      "chrome": "Open Chrome → More tools → Extensions → Enable Developer mode → Load unpacked",
+      "firefox": "Open Firefox → Add-ons → Gear icon → Install Add-on From File",
+      "edge": "Open Edge → Extensions → Load unpacked",
+      "opera": "Open Opera → Extensions → Developer mode → Load unpacked extension"
+    }
+  },
+  
   "help_content": {
     "extension_setup": {
       "title": "🔧 Browser Extension Setup",
       "content": [
-        "**Step 1: Install Browser Extension**",
-        "• Download the Video Downloader Pro extension from Chrome Web Store",
-        "• Or install manually from the extension folder",
+        "Step 1: Install the Video Downloader Pro extension from Chrome Web Store",
+        "Step 2: Make sure the main application is running in the background",
+        "Step 3: Navigate to any video site (YouTube, TikTok, Instagram, etc.)",
+        "Step 4: Click the extension icon next to any video to download it",
+        "Step 5: The download window will automatically appear in Video Downloader Pro",
         "",
-        "**Step 2: Connect Extension**",
-        "• Make sure Video Downloader Pro is running",
-        "• Extension automatically connects to port 8799",
-        "• Status icon turns green when connected",
-        "",
-        "**Step 3: Using the Extension**",
-        "• Visit YouTube, TikTok, Instagram, etc.",
-        "• Click extension icon near any video",
-        "• Select quality and click Download",
-        "• Popup appears in Video Downloader Pro",
-        "",
-        "⚠️ **Troubleshooting:**",
-        "• If extension doesn't connect, restart both app and browser",
-        "• Check firewall allows port 8799",
-        "• Make sure app is running before using extension"
+        "⚠️ Troubleshooting:",
+        "• Make sure port 8799 is not blocked by firewall",
+        "• Restart the application if extension doesn't connect",
+        "• Check if background service is running in Settings tab"
       ]
     },
     
-    "features": {
+    "video_tutorials": {
+      "title": "🎬 Video Tutorials",
+      "content": [
+        "Watch our step-by-step video tutorials to master Video Downloader Pro:",
+        "",
+        "1. Getting Started & Basic Download - Learn how to download your first video",
+        "2. Browser Extension Setup - Install and use the browser extension",
+        "3. Advanced Features - Batch downloads, quality settings, and more",
+        "4. Troubleshooting Common Issues - Fix common problems",
+        "",
+        "Click any tutorial below to start watching:"
+      ],
+      "videos": [
+        {
+          "title": "Getting Started Tutorial",
+          "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "duration": "5:30",
+          "description": "Learn how to download your first video"
+        },
+        {
+          "title": "Browser Extension Guide",
+          "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "duration": "7:15",
+          "description": "Install and use the browser extension"
+        },
+        {
+          "title": "Advanced Features",
+          "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "duration": "10:45",
+          "description": "Batch downloads, quality settings, and more"
+        },
+        {
+          "title": "Troubleshooting Guide",
+          "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "duration": "8:20",
+          "description": "Fix common problems and errors"
+        }
+      ]
+    },
+    
+    "app_features": {
       "title": "✨ Premium Features",
       "content": [
-        "✅ **Video Downloads:**",
-        "• 8K, 4K, 2K, 1080p, 720p, 480p, 360p, 240p, 144p",
-        "• Best quality auto-selection",
-        "• Support for 1000+ sites",
-        "",
-        "✅ **Audio Extraction:**",
-        "• MP3, M4A, WAV, AAC, Opus, FLAC formats",
-        "• High quality audio conversion",
-        "• Batch audio extraction",
-        "",
-        "✅ **Advanced Features:**",
-        "• Browser extension integration",
-        "• Batch download support",
-        "• Download scheduler",
-        "• Pause/resume downloads",
-        "• Concurrent downloads (up to 3)",
-        "• Download history tracking",
-        "",
-        "✅ **Supported Platforms:**",
-        "• YouTube, TikTok, Instagram, Facebook",
-        "• Twitter, Vimeo, Dailymotion, Twitch",
-        "• SoundCloud, Bandcamp, Pinterest",
-        "• Reddit, LinkedIn, and 1000+ more"
+        "✅ Video Downloads: 8K, 4K, 2K, 1080p, 720p, 480p, 360p, 240p, 144p",
+        "✅ Audio Downloads: MP3, M4A, AAC, WAV, Opus, FLAC",
+        "✅ Browser extension integration",
+        "✅ Batch downloading from playlists",
+        "✅ Auto-update system",
+        "✅ Multiple concurrent downloads",
+        "✅ Speed limit controls",
+        "✅ Download scheduling",
+        "✅ 1000+ supported sites (YouTube, TikTok, Instagram, Facebook, Twitter, etc.)",
+        "✅ Premium user interface with dark theme",
+        "✅ Download manager with pause/resume",
+        "✅ Recent downloads history",
+        "✅ One-click download from browser",
+        "✅ Support for YouTube iTags"
       ]
     },
     
-    "updates": {
+    "updates_info": {
       "title": "🔄 Updates & Maintenance",
       "content": [
-        "**Auto Update System:**",
-        "• App checks for updates on startup",
-        "• Auto-downloads and installs updates",
-        "• Preserves your settings and downloads",
-        "",
-        "**Manual Updates:**",
-        "• Click 'Check Update' in Settings",
-        "• Visit our website for latest version",
-        "• GitHub: https://github.com/rehman786112/Video-Downoader-Pro",
-        "",
-        "**Current Version:**",
-        "• v2.0.0 Premium Edition",
-        "",
-        "**Maintenance Tips:**",
-        "• Keep app updated for new features",
-        "• Check dependencies regularly",
-        "• Clear recent downloads periodically",
-        "• Backup your license key",
-        "",
-        "**Update Channels:**",
-        "• Stable: Recommended for all users",
-        "• Beta: Early access to features",
-        "• Nightly: Developer builds"
+        "Auto-updates: Video Downloader Pro automatically checks for updates on startup",
+        "Manual Updates: Go to Settings → Check for Updates to manually update",
+        "Dependency Updates: The app automatically manages yt-dlp, ffmpeg, and aria2",
+        "Maintenance Tips:",
+        "  • Keep the app updated for bug fixes and new features",
+        "  • Regularly check dependencies in Settings → Dependency Management",
+        "  • Clear recent downloads list periodically for better performance",
+        "  • Keep your antivirus whitelisted for the app directory",
+        "  • Backup your license key and settings regularly"
       ]
     },
     
     "faqs": [
       {
-        "question": "❓ Is Video Downloader Pro safe to use?",
-        "answer": "✅ Yes! Our software is 100% safe, virus-free, and respects your privacy. We never track your downloads or collect personal data. All downloads are processed locally on your computer."
+        "question": "Why is my download slow?",
+        "answer": "Check your internet connection. You can also try using aria2c in Settings for faster downloads. Make sure you're not downloading multiple videos simultaneously."
       },
       {
-        "question": "❓ How do browser extensions work?",
-        "answer": "✅ Our extensions integrate with Video Downloader Pro. When you click the extension icon on any video page, it automatically sends the video to the desktop app for download. The extension connects via local port 8799."
+        "question": "Audio and video are not merging?",
+        "answer": "Make sure ffmpeg is installed. Go to Settings → Dependency Management and install missing dependencies. The app needs ffmpeg to merge audio and video streams."
       },
       {
-        "question": "❓ Why is my download slow?",
-        "answer": "🔧 Check your internet connection. Enable aria2c in Settings for faster downloads. Make sure you're not downloading multiple videos simultaneously."
+        "question": "Extension is not working?",
+        "answer": "Check if background service is running in Settings. Restart the service if needed. Make sure the app is running before using the extension."
       },
       {
-        "question": "❓ Audio and video are not merging?",
-        "answer": "🔧 Make sure ffmpeg is installed via 'Install Tools' button. The app needs ffmpeg to merge audio and video streams."
+        "question": "Can I download from all video sites?",
+        "answer": "Yes! Video Downloader Pro supports 1000+ sites including YouTube, TikTok, Instagram, Facebook, Twitter, Vimeo, Dailymotion, and many more."
       },
       {
-        "question": "❓ Extension is not working?",
-        "answer": "🔧 Make sure app is running. Check port 8799 is not blocked by firewall. Restart both app and browser."
+        "question": "How to upgrade to Premium?",
+        "answer": "Click the 'Upgrade to Pro' button in the Download tab or go to Settings → License Activation. You can purchase a license from our website."
       },
       {
-        "question": "❓ Can I download from all video sites?",
-        "answer": "✅ Yes! Video Downloader Pro supports 1000+ sites including YouTube, TikTok, Instagram, Facebook, Twitter, Vimeo, Dailymotion, and many more."
+        "question": "Why is video downloading without audio?",
+        "answer": "Make sure ffmpeg is installed. The app uses ffmpeg to merge audio and video streams. Go to Settings → Dependency Management and install ffmpeg."
       },
       {
-        "question": "❓ How to upgrade to Premium?",
-        "answer": "⭐ Click the 'Upgrade to Pro' button in Download tab or go to Settings → License Activation. Purchase a license from our website."
+        "question": "How to resume failed downloads?",
+        "answer": "Failed downloads can be resumed by clicking the download button again. The app uses yt-dlp's continue feature to resume from where it left off."
       },
       {
-        "question": "❓ Why is video downloading without audio?",
-        "answer": "🔧 Make sure ffmpeg is installed. Go to Settings → Dependency Management and install missing dependencies."
+        "question": "What are iTags?",
+        "answer": "iTags are YouTube's internal format codes. Higher numbers generally mean better quality. The browser extension automatically selects the best iTag for your chosen quality."
       },
       {
-        "question": "❓ How to resume failed downloads?",
-        "answer": "✅ Failed downloads can be resumed by clicking the download button again. The app uses yt-dlp's continue feature to resume from where it left off."
+        "question": "Can I download private videos?",
+        "answer": "No, Video Downloader Pro can only download publicly available videos that you have access to view."
       },
       {
-        "question": "❓ What are iTags?",
-        "answer": "🏷️ iTags are YouTube's internal format codes. Higher numbers generally mean better quality. The browser extension automatically selects the best iTag for your chosen quality."
-      },
-      {
-        "question": "❓ How to change download folder?",
-        "answer": "📁 Click 'Browse' button, select folder - it will be saved automatically for future downloads."
-      },
-      {
-        "question": "❓ How to batch download?",
-        "answer": "📦 Add multiple URLs one by one - they will queue automatically. For playlists, paste the playlist URL."
-      },
-      {
-        "question": "❓ Audio extraction not working?",
-        "answer": "🔧 Make sure FFmpeg is installed via 'Install Tools' button. Also try converting to a different audio format like MP3 instead of M4A."
-      },
-      {
-        "question": "❓ Where are my downloaded files?",
-        "answer": "📁 Check 'Recent Downloads' section or open folder from completion dialog. Files are saved to your selected download folder."
-      },
-      {
-        "question": "❓ How many free downloads do I get?",
-        "answer": "🎯 Free users get 5 trial downloads. After that, upgrade to Pro for unlimited access."
-      },
-      {
-        "question": "❓ Can I download from Netflix/Prime Video?",
-        "answer": "🚫 No, these platforms have DRM protection. We support 1000+ other sites but cannot bypass DRM due to legal restrictions."
-      },
-      {
-        "question": "❓ Is my data safe?",
-        "answer": "🔒 Yes, we don't collect or store any personal data. All downloads are local. We don't have servers storing your download history."
-      },
-      {
-        "question": "❓ How to contact support?",
-        "answer": "📧 Email: support@videodownloader.fwh.is or visit our website contact page."
-      },
-      {
-        "question": "❓ Can I use on multiple computers?",
-        "answer": "💻 Pro license allows use on up to 3 devices simultaneously."
-      },
-      {
-        "question": "❓ App crashes on startup?",
-        "answer": "🔧 Try reinstalling the app, check system requirements, or run as administrator."
+        "question": "Is this software free?",
+        "answer": "The basic version offers limited downloads. You can upgrade to Premium for unlimited downloads and all features."
       }
     ],
     
     "troubleshooting": {
       "title": "🛠️ Troubleshooting Guide",
       "content": [
-        "❌ **Common Issues & ✅ Solutions:**",
+        "❌ Common Issues & ✅ Solutions:",
         "",
-        "1. **Download Failing:**",
+        "1. Download fails immediately:",
         "   ✅ Check internet connection",
-        "   ✅ Try different quality",
-        "   ✅ Use VPN for restricted content",
-        "   ✅ Update yt-dlp via 'Install Tools'",
+        "   ✅ Verify the video URL is correct",
+        "   ✅ Make sure yt-dlp is installed",
         "",
-        "2. **Slow Downloads:**",
-        "   ✅ Enable aria2c in settings",
-        "   ✅ Check internet speed",
-        "   ✅ Try lower quality",
-        "   ✅ Close bandwidth-heavy apps",
+        "2. No audio in video files:",
+        "   ✅ Install/update ffmpeg",
+        "   ✅ Check if video format supports audio",
+        "   ✅ Try a different quality setting",
         "",
-        "3. **Extension Not Working:**",
+        "3. Slow download speed:",
+        "   ✅ Enable aria2c in Settings",
+        "   ✅ Check your internet speed",
+        "   ✅ Reduce number of concurrent downloads",
+        "",
+        "4. Extension not detected:",
+        "   ✅ Restart background service",
         "   ✅ Make sure app is running",
-        "   ✅ Check port 8799 is not blocked",
-        "   ✅ Restart browser and app",
-        "   ✅ Reinstall extension",
+        "   ✅ Check firewall settings",
         "",
-        "4. **License Issues:**",
-        "   ✅ Check internet connection",
-        "   ✅ Verify license key format",
-        "   ✅ Contact support if expired",
-        "   ✅ Try re-activating license",
+        "5. File not found after download:",
+        "   ✅ Check download folder",
+        "   ✅ Search for file by name",
+        "   ✅ Check if download was completed",
         "",
-        "5. **Audio Extraction Failing:**",
-        "   ✅ Install FFmpeg via 'Install Tools'",
-        "   ✅ Try different audio format",
-        "   ✅ Check source video has audio",
+        "6. App crashes or freezes:",
         "   ✅ Update to latest version",
+        "   ✅ Check system requirements",
+        "   ✅ Reinstall the application",
         "",
-        "🔄 **Quick Fixes:**",
+        "🔄 Quick Fixes:",
         "1. Restart Video Downloader Pro",
         "2. Check all dependencies in Settings",
         "3. Try a different video URL",
         "4. Clear recent downloads if list is full",
         "5. Disable antivirus temporarily",
         "",
-        "📞 **Need more help?**",
-        "Contact support: support@videodownloader.fwh.is",
-        "Include error details for faster support"
+        "📞 Need more help? Contact support: support@videodownloader.fwh.is"
       ]
     }
   }
