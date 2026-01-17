@@ -10,13 +10,13 @@
   
   "update": {
     "latest_version": "2.4.0",
-    "download_url": "https://github.com/rehman786112/Video-Downoader-Pro/releases/download/V2.1.0/VideoDownloaderPRO_Setup.exe",
+    "download_url": "https://github.com/rehman786112/Video-Downloader-Pro/releases/download/V2.4.0/VideoDownloaderPRO_Setup.exe",
     "changelog": "🎉 VIDEO DOWNLOADER PRO v2.1.0 RELEASE NOTES\n\n✨ NEW FEATURES:\n• Completely redesigned premium UI with dark theme\n• Browser extension integration (real-time download from any site)\n• Background service for continuous operation\n• Auto-start with Windows enabled\n• Independent download windows for each video\n• Professional progress bars with IDM-style animation\n• Direct update system with download progress\n\n🔄 ENHANCEMENTS:\n• Faster download engine with yt-dlp integration\n• Support for 8K, 4K, 2K, 1080p, 720p, 480p, 360p, 240p, 144p\n• Audio extraction to MP3, M4A, AAC, WAV, FLAC, Opus\n• Batch downloading capabilities\n• Download scheduler for automated downloads\n• Speed limit controls\n• Concurrent downloads management\n\n🔧 TECHNICAL IMPROVEMENTS:\n• Single instance enforcement (no duplicate apps)\n• Proper Windows startup registry integration\n• System tray integration with notifications\n• HTTP server on port 8799 for extension communication\n• Auto-update checking every 2 hours\n• Error handling for all edge cases\n• Memory optimization for long-running service\n\n🐛 BUG FIXES:\n• Fixed download progress tracking issues\n• Resolved window management problems\n• Fixed icon loading on all Windows versions\n• Corrected update system with proper progress bars\n• Fixed background service lifetime management\n• Resolved extension communication issues\n• Fixed file path handling for special characters\n\n⚡ PERFORMANCE:\n• 40% faster download speeds\n• Reduced memory usage by 30%\n• Improved UI responsiveness\n• Faster startup time\n• Optimized background service\n\n📱 COMPATIBILITY:\n• Windows 10, 11 (32-bit & 64-bit)\n• All major browsers (Chrome, Firefox, Edge, Opera)\n• Support for 1000+ video sites\n• Works with firewalls and proxy servers\n\n🔒 SECURITY:\n• No data collection or tracking\n• All downloads processed locally\n• Secure extension communication\n• License key validation system\n• Regular security updates\n\n🚀 NEXT UPDATE (v2.2.0):\n• Playlist downloader with queue management\n• Video converter between formats\n• Cloud storage integration\n• Advanced download scheduler\n• Mobile app companion\n• Voice commands support\n• AI-powered quality selection",
     "update_available": false,
     "release_date": "2024-01-15",
     "release_type": "stable",
     "min_windows_version": "Windows 10",
-    "file_size": "45.2 MB",
+    "file_size": "146.2 MB",
     "installation_time": "2-3 minutes",
     "system_requirements": "2GB RAM, 500MB free space, Internet connection"
   },
